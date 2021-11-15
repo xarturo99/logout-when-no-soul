@@ -1,0 +1,31 @@
+--[[
+    Script Name:        Logout when 0 soul
+    Description:        Logout when X soul
+    Author:             Tomuś
+]]
+
+local SOUL_TARGET = 10 -- when soul points equal or below this value enable cavebot
+
+
+-- DONT EDIT BELOW THIS LINE
+
+Module.New("Enable Cavebot when low Soul", function (mod)
+	
+	-- when self connected.
+	if Self.isConnected() then
+
+		--load soul points
+		local soul = Self.Soul()
+
+		-- when soul points are below x enable.
+		if soul <= SOUL_TARGET then
+
+            Self.Logout()
+
+		end	
+	end	
+
+	-- mod delay
+	mod:Delay(1000, 1500)
+
+end)
