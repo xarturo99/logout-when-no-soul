@@ -4,7 +4,7 @@
     Author:             Tomuś
 ]]
 
-local SOUL_TARGET = 10 -- when soul points equal or below this value enable cavebot
+local SOUL_TARGET = 10 -- TU EDYTUJESZ
 
 
 -- DONT EDIT BELOW THIS LINE
